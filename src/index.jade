@@ -1,0 +1,79 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Where in the world is the data
+
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+  body
+
+    article
+
+      section(data-bespoke-backdrop='orion')(data-bespoke-hash='universe')
+        h1 Where in the universe is the data?
+
+      section(data-bespoke-backdrop='earth')(data-bespoke-hash='why')
+        h2 Let's take a step back
+        h3.bullet Why are we here?
+        ul
+          li We share a need for information
+          li We have various levels of familiarity
+          li We have some new perspectives
+          li We can understand it, and improve it, together
+
+      section(data-bespoke-backdrop='data')(data-bespoke-hash='what-data')
+        h2 What data are we talking about?
+        h3.bullet
+        ul
+          li Data about who people are
+          li Data about what people do, when, and in relation to what
+
+      section.emphatic-text(data-bespoke-backdrop='emphatic')(data-bespoke-hash='how-used')
+        h2 How is the data used
+        h3.bullet Why do we collect it?
+        ul
+          li To help sales people
+          li To segment
+          li To measure
+          li To improve
+
+      section(data-bespoke-backdrop='silos')(data-bespoke-hash='silos')
+        h2 The silos
+        h3 Lots of data in lots of places, for different purposes
+
+      section(data-bespoke-backdrop='silos')(data-bespoke-hash='high-level-map')
+        h2 Syntax Highlighting
+        h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>
+        pre
+          code.language-javascript.
+            bespoke.from('article', [
+              classes(),
+              keys(),
+              touch(),
+              bullets('li, .bullet')
+            ]);
+
+      section(data-bespoke-hash='named-route')
+        h2 Named Route
+        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
+        p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
+
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h2 Emphatic Slide!
+        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a>
+
+      section
+        h2.bullet Just the beginning...
+        br
+        ul
+          li Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em>
+          li Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em>
+          li Edit JavaScript in <em>'src/scripts/main.js'</em>
+        br
+        ul
+          li
+            strong Enjoy! :)
+            a(href='http://twitter.com/markdalgleish')  -@markdalgleish
+
+    script(src='build/build.js')

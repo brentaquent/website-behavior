@@ -1,0 +1,7 @@
+{
+  "name": "presentation-where-in-the-world-is-the-data",
+  "version": "0.0.0",
+  "dependencies": {
+    "prism": "gh-pages"
+  }
+}
