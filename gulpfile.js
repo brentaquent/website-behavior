@@ -39,6 +39,12 @@ gulp.task('html', ['clean:html'], function() {
     .pipe(connect.reload());
 });
 
+gulp.task('favicon', function() {
+  return gulp.src('src/favicon.ico')
+    .pipe(gulp.dest('dist'))
+    .pipe(connect.reload());
+});
+
 gulp.task('css', ['clean:css'], function() {
   return gulp.src('src/styles/main.styl')
     .pipe(isDist ? through() : plumber())
@@ -118,7 +124,7 @@ gulp.task('deploy', ['build'], function(done) {
   ghpages.publish(path.join(__dirname, 'dist'), { logger: gutil.log }, done);
 });
 
-gulp.task('build', ['js', 'html', 'css', 'images']);
+gulp.task('build', ['js', 'html', 'css', 'images', 'favicon']);
 
 gulp.task('serve', ['open', 'watch']);
 
