@@ -1,6 +1,14 @@
 {
   "name": "presentation-where-in-the-world-is-the-data",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "author": {
+    "name": "Brent Northam",
+    "email": "bnortham@aquent.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brentaquent/website-behavior"
+  },
   "dependencies": {},
   "devDependencies": {
     "bespoke": "^1.0.0",
